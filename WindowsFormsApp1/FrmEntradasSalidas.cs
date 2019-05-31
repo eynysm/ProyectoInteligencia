@@ -21,5 +21,21 @@ namespace WindowsFormsApp1
 		{
 
 		}
+
+		public bool validarCampos()
+		{
+			if (!string.IsNullOrEmpty(txtNombre.Text))
+			{
+
+				return true;
+			}
+			MessageBox.Show("Hay campos vacios");
+			return false;
+		}
+
+		private void btnEntradasSalidas_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

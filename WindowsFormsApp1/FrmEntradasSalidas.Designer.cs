@@ -51,6 +51,7 @@
 			this.btnEntradasSalidas.TabIndex = 0;
 			this.btnEntradasSalidas.Text = "Entradas Salidas";
 			this.btnEntradasSalidas.UseVisualStyleBackColor = true;
+			this.btnEntradasSalidas.Click += new System.EventHandler(this.btnEntradasSalidas_Click);
 			// 
 			// label1
 			// 
@@ -155,6 +156,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
+			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(781, 444);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);

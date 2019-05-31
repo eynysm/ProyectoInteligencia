@@ -1,21 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
 	public partial class FrmPrincipal : Form
 	{
+		FrmEntradasSalidas frmEntradasSalidas = new FrmEntradasSalidas();
+		FrmConfiguracion frmConfiguracion = new FrmConfiguracion();
+		FrmEntrenamiento frmEntrenamiento = new FrmEntrenamiento();
+
+		
 		public FrmPrincipal()
 		{
 			InitializeComponent();
 		}
+		
 
 		private void panel2_Paint(object sender, PaintEventArgs e)
 		{
@@ -24,13 +24,16 @@ namespace WindowsFormsApp1
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			AbrirFormHija(new FrmEntradasSalidas());
+			AbrirFormHija(frmEntradasSalidas);
 		}
 
 		private void AbrirFormHija(object formhija)
 		{
 			if (this.panelcontenedor.Controls.Count > 0)
+			{
 				this.panelcontenedor.Controls.RemoveAt(0);
+			}
+
 			Form fh = formhija as Form;
 			fh.TopLevel = false;
 			fh.Parent = panelcontenedor;
@@ -43,17 +46,28 @@ namespace WindowsFormsApp1
 
 		private void btnEntradasSalidas_Click(object sender, EventArgs e)
 		{
-			AbrirFormHija(new FrmEntradasSalidas());
+			
+			
+				AbrirFormHija(frmEntradasSalidas);
+			
+
 		}
 
 		private void btnConfiguracion_Click(object sender, EventArgs e)
 		{
-			AbrirFormHija(new FrmConfiguracion());
+			if (frmEntradasSalidas.validarCampos())
+			{
+				AbrirFormHija(frmConfiguracion);
+			}
 		}
 
 		private void btnEntrenamiento_Click(object sender, EventArgs e)
 		{
-			AbrirFormHija(new FrmEntrenamiento());
+			if (frmConfiguracion.validarCampos())
+			{
+				AbrirFormHija(frmEntrenamiento);
+			}
+			
 		}
 	}
 }

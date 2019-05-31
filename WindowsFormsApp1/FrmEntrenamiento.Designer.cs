@@ -52,7 +52,7 @@
 			this.chartErrorIteracion.ChartAreas.Add(chartArea1);
 			legend1.Name = "Legend1";
 			this.chartErrorIteracion.Legends.Add(legend1);
-			this.chartErrorIteracion.Location = new System.Drawing.Point(45, 123);
+			this.chartErrorIteracion.Location = new System.Drawing.Point(45, 137);
 			this.chartErrorIteracion.Name = "chartErrorIteracion";
 			series1.ChartArea = "ChartArea1";
 			series1.Legend = "Legend1";
@@ -68,7 +68,7 @@
 			this.chartPesosUmbrales.ChartAreas.Add(chartArea2);
 			legend2.Name = "Legend1";
 			this.chartPesosUmbrales.Legends.Add(legend2);
-			this.chartPesosUmbrales.Location = new System.Drawing.Point(417, 123);
+			this.chartPesosUmbrales.Location = new System.Drawing.Point(417, 137);
 			this.chartPesosUmbrales.Name = "chartPesosUmbrales";
 			series2.ChartArea = "ChartArea1";
 			series2.Legend = "Legend1";
@@ -80,7 +80,7 @@
 			// 
 			// progressBar1
 			// 
-			this.progressBar1.Location = new System.Drawing.Point(45, 373);
+			this.progressBar1.Location = new System.Drawing.Point(45, 387);
 			this.progressBar1.Name = "progressBar1";
 			this.progressBar1.Size = new System.Drawing.Size(709, 23);
 			this.progressBar1.TabIndex = 2;
@@ -88,7 +88,7 @@
 			// lblRata
 			// 
 			this.lblRata.AutoSize = true;
-			this.lblRata.Location = new System.Drawing.Point(42, 34);
+			this.lblRata.Location = new System.Drawing.Point(42, 48);
 			this.lblRata.Name = "lblRata";
 			this.lblRata.Size = new System.Drawing.Size(124, 13);
 			this.lblRata.TabIndex = 3;
@@ -97,7 +97,7 @@
 			// lblErrorMaximo
 			// 
 			this.lblErrorMaximo.AutoSize = true;
-			this.lblErrorMaximo.Location = new System.Drawing.Point(42, 61);
+			this.lblErrorMaximo.Location = new System.Drawing.Point(42, 75);
 			this.lblErrorMaximo.Name = "lblErrorMaximo";
 			this.lblErrorMaximo.Size = new System.Drawing.Size(135, 13);
 			this.lblErrorMaximo.TabIndex = 4;
@@ -106,7 +106,7 @@
 			// lblNumeroIteraciones
 			// 
 			this.lblNumeroIteraciones.AutoSize = true;
-			this.lblNumeroIteraciones.Location = new System.Drawing.Point(42, 88);
+			this.lblNumeroIteraciones.Location = new System.Drawing.Point(42, 102);
 			this.lblNumeroIteraciones.Name = "lblNumeroIteraciones";
 			this.lblNumeroIteraciones.Size = new System.Drawing.Size(135, 13);
 			this.lblNumeroIteraciones.TabIndex = 5;
@@ -115,7 +115,7 @@
 			// lblIIteracion
 			// 
 			this.lblIIteracion.AutoSize = true;
-			this.lblIIteracion.Location = new System.Drawing.Point(591, 61);
+			this.lblIIteracion.Location = new System.Drawing.Point(591, 75);
 			this.lblIIteracion.Name = "lblIIteracion";
 			this.lblIIteracion.Size = new System.Drawing.Size(69, 13);
 			this.lblIIteracion.TabIndex = 9;
@@ -124,7 +124,7 @@
 			// lblErrorIteracion
 			// 
 			this.lblErrorIteracion.AutoSize = true;
-			this.lblErrorIteracion.Location = new System.Drawing.Point(591, 88);
+			this.lblErrorIteracion.Location = new System.Drawing.Point(591, 102);
 			this.lblErrorIteracion.Name = "lblErrorIteracion";
 			this.lblErrorIteracion.Size = new System.Drawing.Size(113, 13);
 			this.lblErrorIteracion.TabIndex = 10;
@@ -135,6 +135,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
+			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.lblErrorIteracion);
 			this.Controls.Add(this.lblIIteracion);

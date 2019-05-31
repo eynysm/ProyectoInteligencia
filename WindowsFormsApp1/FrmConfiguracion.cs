@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -15,6 +7,16 @@ namespace WindowsFormsApp1
 		public FrmConfiguracion()
 		{
 			InitializeComponent();
+		}
+
+		public bool validarCampos()
+		{
+			if (!string.IsNullOrEmpty(txtIteraciones.Text) && !string.IsNullOrEmpty(txtRata.Text) && !string.IsNullOrEmpty(txtErrorMaximo.Text))
+			{
+				return true;
+			}
+			MessageBox.Show("Campos Vacios");
+			return false;
 		}
 	}
 }
