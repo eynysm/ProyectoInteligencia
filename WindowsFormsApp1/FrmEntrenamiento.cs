@@ -47,11 +47,13 @@ namespace WindowsFormsApp1
             List<float> listaU = new List<float>();
             for (int i = 0; i < listaUmbrales.Length; i++)
             {
-                
+				listaU.Add(listaUmbrales[i]);
             }
-            chartPesosUmbrales.Series[0].Points.DataBindY(listaUmbrales);
+			// Pesosy Umbrales 
+            
             chartPesosUmbrales.Series[0].Points.DataBindY(listaP);
-            chartPesosUmbrales.Update();
+			chartPesosUmbrales.Series[1].Points.DataBindY(listaU);
+			chartPesosUmbrales.Update();
 
 
         }

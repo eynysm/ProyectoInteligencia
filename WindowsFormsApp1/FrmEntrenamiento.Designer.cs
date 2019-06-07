@@ -164,7 +164,7 @@
 			series4.BorderWidth = 2;
 			series4.ChartArea = "ChartArea1";
 			series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-			series4.Color = System.Drawing.Color.Crimson;
+			series4.Color = System.Drawing.Color.Blue;
 			series4.Legend = "Legend1";
 			series4.Name = "Umbrales";
 			this.chartPesosUmbrales.Series.Add(series3);
